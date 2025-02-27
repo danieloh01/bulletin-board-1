@@ -1,0 +1,17 @@
+<div>
+  <div>
+    <h1>
+      List of all boards
+    </h1>
+  </div>
+</div>
+
+<hr>
+
+<ul>
+  <% @list_of_boards.each do |a_board| %>
+    <li>
+      <a href="/boards/<%= a_board.id %>"><%= a_board.name %></a>
+    </li>
+  <% end %>
+</ul>
